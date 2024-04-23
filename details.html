@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ZENCAR: Car Website Template</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/fa/css/all.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style-global-blocks.css">
+		<link rel="stylesheet" href="style-global.css">
+		<link rel="stylesheet" href="style-responsive.css">
+		<script src="js/jquery.js"></script>
+	</head>
+
+
+
+	<body id="home">
+		
+
+
+		<header class="p_fixed left top w_100 zindex_5 ts_0_5 dflex flex_wrap jc_sb ai_c">
+
+			<a href="#" class="logo">
+				<img src="images/logo-primary.png" alt="" class="logo-primary" />
+				<img src="images/logo-secondary.png" alt="" class="logo-secondary" />
+			</a>
+
+
+			<div class="headermenu">
+				<a href="javascript:void()" class="showmenu menucontrol"><i class="fa-solid fa-bars"></i></a>
+				<a href="javascript:void()" class="hidemenu menucontrol"><i class="fa-solid fa-times"></i></a>
+				<div class="navigation">
+					<nav id="headnav">
+						<ul class="fs_1_6_rem">
+							<li class="active"><a href="#home">AnaSayfa</a></li>
+							<li><a href="#about">Hakkımızda</a></li>
+							<li><a href="#specs">Özellİkler</a></li>
+							<li><a href="details.html">Satın Al</a></li>
+							<li><a href="#contact">İLETİŞİM</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</header>
+		<!-- HEADER -->
+
+			<div id="merhaba"></div>
+
+
+		<section class="banner f_l_w_100 pt_200 pb_150 pb_80_fhd pb_40_tablet aspectratio_16_8 aspectratio_16_18_mobile dflex flex_wrap js_fe ai_fe">
+			<div class="container">
+
+
+				<div class="text dflex  jc_fs">
+					<h1 class="text_white fs_4_5_rem tt_u w_60">
+						<a href="#" class="text_white">Peşin $3000 </a>
+						
+						
+					</h1>
+					
+					<button class="btn" onclick="tabloYap()">Kredi Hesapla</button>
+				</div>
+				
+			</div>
+		</section>
+		
+		<!-- IMG BLOCK -->
+
+
+
+
+
+		<section class="contact f_l_w_100" id="contact">
+			<div class="contactinner ptb_200 ptb_125_fhd ptb_60_tablet f_l_w_100 bg_gainsboro">
+				<div class="container">
+					
+					<h3 class="tt_u fs_4_rem mb_80 mb_20_tablet">İletişim</h3>
+
+					<div class="contactform style1">
+						<form method="get" action="#" onsubmit="false">
+							<input type="text" name="name" placeholder="İsim*">
+							<input type="email" name="email" placeholder="Email Adres*">
+							<textarea name="message" placeholder="Mesajınızı Yazınız*"></textarea>
+							<button type="submit" class="bg_none border" onclick="return Yaz()">ilet</button>
+						</form>
+					</div>
+					
+
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT -->
+
+
+
+
+
+
+		<footer class="f_l_w_100 ptb_175 ptb_100_fhd ptb_50_tablet">
+			<div class="container dflex flex_wrap jc_sb">
+				<div class="copyright fs_1_8_rem fs_15_tablet w_100_mobile">Copyright &copy; <span id="year"></span> <a href="#" class="border_none">ZENCAR</a>. Template By <a href="#">LayoutFlow</a> &nbsp; Changed by Abuzer KORKMAZ </div>
+				<div class="social fs_1_8_rem fs_15_tablet w_100_mobile mt_30_mobile">
+					<a href="https://github.com/AbuzerKorkmaz"><i class="fa-brands fa-linkedin" ></i></a>
+					<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER -->
+
+
+
+		<script src="js/js-global-blocks.js"></script>
+		<script>
+			var menuid = '#headnav';
+			var gaptop = 135;
+			var scrollspeed = 1200;
+			var menu_active_class = 'active';
+		</script>	
+		<script src="js/navjs.js"></script>
+		<script>
+
+				function Yaz(){
+
+					let isim=document.getElementsByName("name");
+					let email=document.getElementsByName("email")
+					let mesaj=document.getElementsByName("message")
+
+					alert(isim[0].value+" ve " +email[0].value+ " isim ve mailli kişiden mesaj: " + mesaj[0].value)
+				}
+
+		
+		</script>
+	</body>
+</html>
+<!-- HTML -->
+<!-- Template By: LayoutFlow, URL: https://layoutflow.com/  -->
